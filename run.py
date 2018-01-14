@@ -10,7 +10,10 @@ def login_check(message):
     	        FROM public."user"
                 WHERE id={};"""
     query_result = db_query.execute_query(query.format(message.chat.id))
-    return query_result.value[0][1]
+    if len(query_result.value)<1:
+        return False
+    else:
+        return query_result.value[0][1]
 
 @bot.message_handler(commands=['start'])
 def insert_into_a_db(message):
