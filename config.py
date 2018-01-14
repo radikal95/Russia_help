@@ -1,0 +1,6 @@
+token='477929585:AAERc3P2KxWVPED7xhwJNY6D0eY3kkGY1Tw'
+HOST = 'localhost'
+DATABASE_URL = 'russia_help'
+USERNAME = 'app_user'
+PASSWORD = 'radikal'
+secret_key='12345'
