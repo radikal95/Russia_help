@@ -30,7 +30,7 @@ def insert_into_a_db(message):
         if message.chat.first_name:
             name = str(message.chat.first_name)
         if message.chat.last_name:
-            name = name + ' ' + str(message.chat.first_name)
+            name = name + ' ' + str(message.chat.last_name)
         query_result=db_query.execute_query(query.format(name,message.chat.id),is_dml=True)
         if (query_result.success):
             bot.send_message(message.chat.id, "So, tell us the key")
