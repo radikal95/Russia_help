@@ -46,7 +46,10 @@ def login(message):
                 WHERE id={};"""
         query_result=db_query.execute_query(query.format(message.chat.id),is_dml=True)
         if query_result.success:
-            bot.send_message(message.chat.id, "Welcome! You are logged in")
+            bot.send_message(message.chat.id, """/security - security information \n
+                                                /information - general information \n
+                                                /travel - accommodation, logistics, visas, taxis \n
+                                                /entertainment - info on local entertainment""")
     else:
         bot.send_message(message.chat.id, "You are already logged in")
 
