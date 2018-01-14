@@ -23,7 +23,11 @@ def insert_into_a_db(message):
                                         auth,
                                         id)
 	                                    VALUES ('{}', False, {});"""
-        name = str(message.chat.first_name+' '+message.chat.last_name)
+        name = 'Unknown user'
+        if message.chat.first_name:
+            name = str(message.chat.first_name)
+        if message.chat.last_name:
+            name = name + ' ' + str(message.chat.first_name)
         query_result=db_query.execute_query(query.format(name,message.chat.id),is_dml=True)
         if (query_result.success):
             bot.send_message(message.chat.id, "So, tell us the key")
@@ -32,9 +36,9 @@ def insert_into_a_db(message):
             bot.send_message(message.chat.id, "Tell us the key")
         else:
             bot.send_message(message.chat.id, """/security - security information \n
-                                                /information - general information \n
-                                                /travel - accommodation, logistics, visas, taxis \n
-                                                /entertainment - info on local entertainment""")
+/information - general information \n
+/travel - accommodation, logistics, visas, taxis \n
+/entertainment - info on local entertainment""")
 
 @bot.message_handler(regexp=config.secret_key)
 def login(message):
@@ -49,15 +53,15 @@ def login(message):
         query_result=db_query.execute_query(query.format(message.chat.id),is_dml=True)
         if query_result.success:
             bot.send_message(message.chat.id, """You are logged in! \n
-                                                /security - security information \n
-                                                /information - general information \n
-                                                /travel - accommodation, logistics, visas, taxis \n
-                                                /entertainment - info on local entertainment""")
+/security - security information \n
+/information - general information \n
+/travel - accommodation, logistics, visas, taxis \n
+/entertainment - info on local entertainment""")
     else:
         bot.send_message(message.chat.id, """/security - security information \n
-                                                /information - general information \n
-                                                /travel - accommodation, logistics, visas, taxis \n
-                                                /entertainment - info on local entertainment""")
+/information - general information \n
+/travel - accommodation, logistics, visas, taxis \n
+/entertainment - info on local entertainment""")
 
 @bot.message_handler(func=lambda message: login_check(message))
 def dialog(message):
