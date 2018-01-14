@@ -49,19 +49,22 @@ def login(message):
     	        FROM public."user"
                 WHERE id={};"""
     query_result = db_query.execute_query(query.format(message.chat.id))
-    if not query_result.value[0][1]:
-        query = """UPDATE public."user"
-                SET auth = True
-                WHERE id={};"""
-        query_result=db_query.execute_query(query.format(message.chat.id),is_dml=True)
-        if query_result.success:
-            bot.send_message(message.chat.id, """You are logged in! \n
+    if len(query_result.value)<1:
+        bot.send_message(message.chat.id, "You are not authorized")
+    else:
+        if not query_result.value[0][1]:
+            query = """UPDATE public."user"
+                    SET auth = True
+                    WHERE id={};"""
+            query_result=db_query.execute_query(query.format(message.chat.id),is_dml=True)
+            if query_result.success:
+                bot.send_message(message.chat.id, """You are logged in! \n
 /security - security information \n
 /information - general information \n
 /travel - accommodation, logistics, visas, taxis \n
 /entertainment - info on local entertainment""")
-    else:
-        bot.send_message(message.chat.id, """/security - security information \n
+        else:
+            bot.send_message(message.chat.id, """/security - security information \n
 /information - general information \n
 /travel - accommodation, logistics, visas, taxis \n
 /entertainment - info on local entertainment""")
