@@ -18,6 +18,7 @@ def insert_into_a_db(message):
 	        FROM public."user"
             WHERE id={};"""
     query_result=db_query.execute_query(query.format(message.chat.id))
+    print(query_result.success)
     if len(query_result.value)<1:
         query ="""INSERT INTO public."user"(full_name,
                                         auth,
@@ -28,11 +29,12 @@ def insert_into_a_db(message):
         if (query_result.success):
             bot.send_message(message.chat.id, "So, tell us the key")
     else:
-        if not query_result.value[0][1]:
-            bot.send_message(message.chat.id, "Tell us the key")
-        else:
-            bot.send_message(message.chat.id, "You are already logged in")
-
+        print(query_result.value)
+        #if not query_result.value[0][1]:
+        #    bot.send_message(message.chat.id, "Tell us the key")
+        #else:
+        #    bot.send_message(message.chat.id, "You are already logged in")
+        bot.send_message(message.chat.id, "Test")
 
 @bot.message_handler(regexp=config.secret_key)
 def login(message):
