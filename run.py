@@ -31,8 +31,10 @@ def insert_into_a_db(message):
         if not query_result.value[0][1]:
             bot.send_message(message.chat.id, "Tell us the key")
         else:
-            bot.send_message(message.chat.id, "You are already logged in")
-        bot.send_message(message.chat.id, "Test")
+            bot.send_message(message.chat.id, """/security - security information \n
+                                                /information - general information \n
+                                                /travel - accommodation, logistics, visas, taxis \n
+                                                /entertainment - info on local entertainment""")
 
 @bot.message_handler(regexp=config.secret_key)
 def login(message):
@@ -46,12 +48,16 @@ def login(message):
                 WHERE id={};"""
         query_result=db_query.execute_query(query.format(message.chat.id),is_dml=True)
         if query_result.success:
-            bot.send_message(message.chat.id, """/security - security information \n
+            bot.send_message(message.chat.id, """You are logged in! \n
+                                                /security - security information \n
                                                 /information - general information \n
                                                 /travel - accommodation, logistics, visas, taxis \n
                                                 /entertainment - info on local entertainment""")
     else:
-        bot.send_message(message.chat.id, "You are already logged in")
+        bot.send_message(message.chat.id, """/security - security information \n
+                                                /information - general information \n
+                                                /travel - accommodation, logistics, visas, taxis \n
+                                                /entertainment - info on local entertainment""")
 
 @bot.message_handler(func=lambda message: login_check(message))
 def dialog(message):
