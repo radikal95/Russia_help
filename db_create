@@ -1,0 +1,20 @@
+-- Table: public."user"
+
+-- DROP TABLE public."user";
+
+CREATE TABLE public."user"
+(
+    id integer NOT NULL,
+    full_name_telegram character varying(250) COLLATE pg_catalog."default",
+    full_name_provided character varying(250) COLLATE pg_catalog."default",
+    office character varying(250) COLLATE pg_catalog."default",
+    stage integer NOT NULL,
+    auth boolean NOT NULL
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."user"
+    OWNER to app_user;
