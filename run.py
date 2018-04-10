@@ -188,7 +188,7 @@ def dialog(message):
                              parse_mode='HTML')
         elif message.text == '/faq':
             bot.send_message(message.chat.id,
-                             "<b>WHAT IF…</b>\n\n"
+                             "<b>WHAT IF...</b>\n\n"
                              u'\U0001F4CD'"<b>I have a valid Russian visa and do not have FAN ID</b>\n\n"
                              "You can enter Russia for business, work, tourism, or private purposes depending on your visa type.\n"
                              "You still need to apply for a FAN ID if you want to access the stadiums. With a valid Russian visa you can either get your FAN ID in advance at your home country or visit the one of distribution centers located in the host cities upon your arrival to Russia.\n\n"
