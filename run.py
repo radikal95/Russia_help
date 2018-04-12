@@ -213,7 +213,7 @@ def dialog(message):
                              "- Minimum stay from 4 nights \n"
                              "- Non-refundable \n"
                              "- 100% Prepaid \n\n"
-                             "<b>To get assistance with hotel booking contact our Travel Support Desk on MSW - 2018 FWC Travel Support</b>\n\n"
+                             "<b>To get assistance with hotel booking contact our Travel Support Desk on</b> FIFA2018-Travel@mckinsey.com\n\n"
                              "In accordance with the special migration regime introduced in Russia during the 2018 FIFA World Cup, all foreign nationals need to register within 24 hours upon arrival, instead of 7 working days normally. This rule applies to Volgograd, Ekaterinburg, Kazan, Kaliningrad, Moscow, Nizhny Novgorod, Rostov-on-Don, Samara, Saint-Petersburg, Saransk and Sochi from May 25, 2018 till July 25, 2018.\n\n"
                              "If you are travelling between the host cities, you need to register each time upon arrival to every city and submit the registration card you obtained in the previous city.\n\n"
                              "According to the law, either you or your receiving party (i.e. your hotel or host) need to get the registration in the territorial department of the Ministry of Internal Affairs.\n\n"
@@ -409,7 +409,6 @@ def dialog(message):
                                                "Sign up to participate <a href='https://www.surveymonkey.com/r/V8DH32F'>here</a> \n\n"
                                                "Detailed information will follow. \n\n"
                                                "Stay up to date with the latest news from the Moscow office and get ready for this sensational event! \n\n"
-                                               "If you have questions about our entertainment programs, please send your emails to <b>MSW-2018 FIFA World Cup in Russia.</b>\n\n"
                                                "To return press /menu",
                              parse_mode='HTML')
         else:
