@@ -26,8 +26,8 @@
       <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="393" column="129" selection-start-line="393" selection-start-column="129" selection-end-line="393" selection-end-column="129" />
+            <state relative-caret-position="597">
+              <caret line="392" column="133" selection-start-line="392" selection-start-column="133" selection-end-line="392" selection-end-column="133" />
               <folding>
                 <element signature="e#48#62#0" expanded="true" />
                 <element signature="e#195#469#0" expanded="false" />
@@ -63,7 +63,7 @@
                 <element signature="e#26930#27821#0" expanded="false" />
                 <element signature="e#27875#28347#0" expanded="false" />
                 <element signature="e#28407#29525#0" expanded="false" />
-                <element signature="e#31146#32071#0" expanded="false" />
+                <element signature="e#31150#32075#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -474,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523562042173</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="final version 1.03">
+      <created>1523647841862</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523647841862</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -523,7 +530,8 @@
     <MESSAGE value="error fixing" />
     <MESSAGE value="final version 1.01" />
     <MESSAGE value="final version 1.02" />
-    <option name="LAST_COMMIT_MESSAGE" value="final version 1.02" />
+    <MESSAGE value="final version 1.03" />
+    <option name="LAST_COMMIT_MESSAGE" value="final version 1.03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -571,7 +579,7 @@
             <element signature="e#26930#27821#0" expanded="false" />
             <element signature="e#27875#28347#0" expanded="false" />
             <element signature="e#28407#29525#0" expanded="false" />
-            <element signature="e#31146#32071#0" expanded="false" />
+            <element signature="e#31150#32075#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -657,7 +665,7 @@
             <element signature="e#26930#27821#0" expanded="false" />
             <element signature="e#27875#28347#0" expanded="false" />
             <element signature="e#28407#29525#0" expanded="false" />
-            <element signature="e#31146#32071#0" expanded="false" />
+            <element signature="e#31150#32075#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -735,7 +743,7 @@
             <element signature="e#26930#27821#0" expanded="false" />
             <element signature="e#27875#28347#0" expanded="false" />
             <element signature="e#28407#29525#0" expanded="false" />
-            <element signature="e#31146#32071#0" expanded="false" />
+            <element signature="e#31150#32075#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -805,7 +813,7 @@
             <element signature="e#26930#27821#0" expanded="false" />
             <element signature="e#27875#28347#0" expanded="false" />
             <element signature="e#28407#29525#0" expanded="false" />
-            <element signature="e#31146#32071#0" expanded="false" />
+            <element signature="e#31150#32075#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -875,7 +883,7 @@
             <element signature="e#26930#27821#0" expanded="false" />
             <element signature="e#27875#28347#0" expanded="false" />
             <element signature="e#28407#29525#0" expanded="false" />
-            <element signature="e#31146#32071#0" expanded="false" />
+            <element signature="e#31150#32075#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -944,15 +952,15 @@
             <element signature="e#26930#27821#0" expanded="false" />
             <element signature="e#27875#28347#0" expanded="false" />
             <element signature="e#28407#29525#0" expanded="false" />
-            <element signature="e#31146#32071#0" expanded="false" />
+            <element signature="e#31150#32075#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="393" column="129" selection-start-line="393" selection-start-column="129" selection-end-line="393" selection-end-column="129" />
+        <state relative-caret-position="597">
+          <caret line="392" column="133" selection-start-line="392" selection-start-column="133" selection-end-line="392" selection-end-column="133" />
           <folding>
             <element signature="e#48#62#0" expanded="true" />
             <element signature="e#195#469#0" expanded="false" />
@@ -988,7 +996,7 @@
             <element signature="e#26930#27821#0" expanded="false" />
             <element signature="e#27875#28347#0" expanded="false" />
             <element signature="e#28407#29525#0" expanded="false" />
-            <element signature="e#31146#32071#0" expanded="false" />
+            <element signature="e#31150#32075#0" expanded="false" />
           </folding>
         </state>
       </provider>
